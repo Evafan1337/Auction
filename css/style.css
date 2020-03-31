@@ -1,0 +1,755 @@
+
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	/*color: rgba(255,255,255,1);*/
+}
+
+input{
+	outline:none;
+}
+
+.container{
+	max-width: 940px;
+	margin: 0px auto;
+}
+
+.container-wide{
+	position: relative;
+	max-width: 1280px;
+	margin: 10px auto;
+}
+
+.header-static-inner{
+	/*padding-top:30px;*/
+	padding-left: 50px;
+	/*//background-color: rgba(44, 58, 168, 1);*/
+	/*background-color:rgba(0, 101, 252, 1);*/
+	background-color: white;
+}
+
+.header-static{
+	display: flex;
+}
+
+.header-static-wrapper{
+	margin-top:15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.header-other-info{
+
+}
+
+.header-other-info__link{
+	display: block;
+	padding:5px;
+	padding-left:15px;
+	padding-right: 15px;
+	margin:5px;
+	color:white;
+	text-decoration: none;
+	background:rgba(82, 82, 82, 1);
+}
+
+.search-form{
+	padding-left:100px;
+	margin-top: 25px;
+}
+
+.search-form__text-field{
+	width: 320px;
+    /*padding-top: 7px;*/
+    padding-bottom: 3px;
+    padding-left: 30px;
+    border-radius: 7px;
+    background: white;
+    color: black;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 20px;
+}
+
+.search-form-input__submit{
+	margin-top:3px;
+	padding-left: 10px;
+	padding-top:5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	/*background-color:rgba(0, 57, 143, 1);*/
+	background:rgba(82, 82, 82, 1);
+	color:white;
+	border-radius: 7px;
+}
+
+.search-form__input--non-visible{
+	display: none;
+}
+
+.nav{
+	display: flex;
+	padding-left:30px;
+	background:rgba(82, 82, 82, 1);
+}
+
+.nav-point{
+	padding:15px;
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+
+.nav-point--username{
+	margin-left: auto;
+    margin-right: 10%;
+}
+
+.nav-point:hover{
+	background: #1d1d1d;
+}
+
+.filtration{
+    margin-top: 50px;
+    margin-bottom: 50px;
+	color:black;
+}
+
+.form{
+	display: flex;
+	justify-content: center;
+}
+
+.form-block{
+	display: grid;
+    grid-template-columns: 1fr;
+    /*grid-template-rows: 2fr;*/
+}
+
+.form-block--two-columns{
+	grid-template-columns: 1fr 1fr;
+}
+
+.form__select{
+	align-self: center;
+    padding: 15px;
+    margin-left: 20px;
+    font-size: 26px;
+    /*background:rgba(182, 182, 182, 1);*/
+    background:white;
+}
+
+.form__submit{
+	align-self: center;
+    padding: 16px;
+    margin-left: 20px;
+    font-size: 26px;
+    background:rgba(232, 232, 232, 1);
+    border :1px solid black;
+    /*outline: none;*/
+    border: none;
+}
+
+.form-block__elem{
+	margin:5px;
+	padding-left:5px;
+	font-size:18px;
+}
+
+.main-preview-wrapper{
+	padding-top:75px;
+	height: 750px;
+	box-shadow:0 0 0 940px rgba(0, 0, 0, 0.75) inset;
+	background-size: cover;
+	background: url("../images/car-traffic.jpg");
+	background-position: center;
+	/*text-shadow: 1px 1px 1px black, 0 0 1em black;*/
+	
+}
+
+.main-offers-inner__header,
+.main-preview-inner__header{
+	margin-top:0px;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+.main-offers-wrapper{
+	padding-top:50px;
+	font-size: 18px;
+	line-height: 30px;
+	color:white;
+	background-color: rgba(82, 82, 82, 1);
+}
+
+.main-offers-block{
+	padding-top:35px;
+	padding-bottom: 55px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.preview-list{
+	padding-top:75px;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.preview-list-elem{
+	width: 40%;
+	height: 200px;
+	margin:25px;
+	background: white;
+	color:black;
+}
+
+.preview-list-elem__text{
+	position: relative;
+	display: block;
+	width:85%;
+    padding-top: 130px;
+	margin:0 auto;
+}
+
+.preview-list-elem__text:before{
+	content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 10px;
+    left: 90px;
+    background: url("../images/search.svg");
+    background-size: cover;
+}
+
+.main-offers-wrapper__header{
+	text-align: center;
+}
+
+
+
+
+.main-offers-block__text-box{
+	width:45%;
+}
+
+.temp-img{
+	display: block;
+	width: 125px;
+	height: 125px;
+	background: url("../images/check-square.svg");
+}
+
+.main-offer-block--left{
+	flex-direction: row
+}
+
+.main-offer-block--right{
+	flex-direction: row-reverse;
+}
+
+.faq{
+	color:black;
+}
+
+.faq-list{
+	display: flex;
+    justify-content: space-evenly;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.faq-list__question{
+	margin-top:25px;
+	width:45%;
+}
+
+.faq-list__header{
+	text-align: center;
+	border: 2px solid black;
+}
+
+.search-link{
+	padding:100px;
+	color:black;
+}
+
+.search-link__text{
+	text-align: center;
+}
+
+.search-link__redirect{
+	display: block;
+    width: 53px;
+    margin: 0 auto;
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left: 75px;
+    padding-right: 75px;
+    color:white;
+    background: black;
+}
+
+.pagination{
+	padding-left: 0px;
+	margin-left: 20px;
+	display: flex;
+}
+
+.pagination__elem{
+	display: block;
+	padding: 10px;
+	margin:5px;
+	/*background: black;*/
+	text-decoration: none;
+	font-size: 24px;
+    background: rgba(82,82,82,1);
+	color:white;
+}
+
+.pagination__elem:hover{
+	background: #1d1d1d;
+}
+
+.pagination__elem--selected{
+	background: rgba(182,182,182,1);
+}
+
+.footer-wrapper{
+	background: rgba(82,82,82,1);
+}
+
+.footer-inner{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer-options{
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	margin-bottom: 0px;
+	list-style-type: none;
+	color:white;
+}
+
+.footer-options{
+	display: flex;
+	padding-left:30px;
+	background:rgba(82, 82, 82, 1);
+}
+
+.footer-options__elem{
+	padding:10px;
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+
+.footer-options__elem:hover{
+	background: #1d1d1d;
+}
+
+/*
+.lot *{
+	border: 1px solid black;
+}
+
+*/
+.lot{
+	position: relative;
+	display: grid;
+	text-decoration: none;
+	color:black;
+	grid-template-columns: repeat(4,1fr);
+	padding-top:15px;
+	padding-bottom: 15px;
+	border:1px solid gray;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+/*.lot:before{
+	position: absolute;
+	content: 'Экспресс тур';
+	font-size: 32px;
+	text-align: center;
+	width: 100%;
+	/*left:5%;*/
+	/*top:20px;*/
+	/*margin:0 auto;
+	color:white;
+	height: 165px;
+	background: rgba(1,1,1, 0.75);
+}*/
+
+/*.express-tour{
+	position: absolute;
+	content: 'Экспресс тур';
+	font-size: 32px;
+	text-align: center;
+	/*width: 96.75%;
+	width: 500px;
+	left: 50%;
+	margin-left: -250px;
+	margin: 0 auto;
+	/*display: block;
+	top:20%;
+	/*margin-top: 30px;
+	/*left:5%;*/
+	/*top:20px;*/
+	/*margin:0 auto;
+	color:white;
+	/*height: 50px;
+	padding:30px;
+	background: rgba(150,10,10, 0.95);
+}*/
+
+.express-tour{
+	position: absolute;
+	border: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    content: 'Экспресс тур';
+    font-size: 20px;
+    text-align: center;
+    /* width: 96.75%; */
+    width: 353px;
+    /* left: 50%; */
+    /* margin-left: -250px; */
+    /* margin: 0 auto; */
+    /* display: block; */
+    /* top: 20%; */
+    /* margin-top: 30px; */
+    /* left: 5%; */
+    /* top: 20px; */
+    /* margin: 0 auto; */
+    color: white;
+    /* height: 50px; */
+    padding: 30px;
+    background: rgba(150,10,10, 0.75);
+}
+
+.lot--outdated{
+	/*border:1px solid #911f1f;*/
+	background: rgba(184, 140, 140, 0.11);
+}
+
+.lot:hover{
+	/*border: none;*/
+	border: 1px solid white;
+	/*box-shadow: 0 0 50px rgba(0,0,0,0.5);*/
+    box-shadow: 0 0 25px rgba(0,0,0,0.75);
+}
+
+.lot--outdated:hover{
+	box-shadow: 0 0 50px rgba(145,31,31,0.5);
+}
+
+.lot-elem{
+	display: flex;
+	flex-direction: column;
+}
+
+.lot-elem--info{
+	border: 1px solid gray;
+    padding: 10px;
+}
+
+.lot__image{
+	justify-self:center;
+	border: 1px solid gray;
+}
+
+.lot-elem--horizontal{
+	display: flex;
+	flex-direction: row;
+}
+
+.lot__car-model{
+	font-size: 24px;
+}
+
+.lot-container{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.lot__text{
+	font-size: 20px;
+	line-height: 22px;
+}
+
+.lot__text--data-underline{
+	border-bottom: 1px solid black;
+}
+
+.debug{
+	margin: 0 auto;
+    width: 300px;
+}
+
+.debug__select{
+	width: 240px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
+    /*text-align: center;*/
+}
+
+.debug__submit{
+	width: 240px;
+    margin: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.debug__files{
+	width: 240px;
+    display: block;
+    margin: 5px;
+}
+
+.auction-info{
+	margin-left:20px;
+}
+
+.express-tour-timer,
+.auction-info__timer{
+	font-size: 30px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(168, 34, 34, 1);
+}
+
+.express-tour-timer--lot-modyfy,
+.auction-info__timer--lot-modify{
+	/*text-align: left;*/
+	display: inline;
+	font-size: 20px;
+}
+
+/*.bet-form{
+	pointer-events: none;
+}
+
+.bet-form input,
+.bet-form label{
+	/*pointer-events: auto;
+}*/
+
+/*office*/
+
+.initials{
+	display: flex;
+	flex-direction: column;
+	font-size: 22px;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+.initials-username,
+.initials-email{
+	padding:10px;
+}
+
+.sorting{
+	/*display: flex;*/
+}
+
+.sorting-interface{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.sorting-interface__elem{
+	display: block;
+    margin-left: 20px;
+    /*width: 20%;*/
+    /* text-align: center; */
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    background: rgba(82, 82, 82, 1);
+    margin-left: 20px;
+}
+
+.sorting-interface__elem--active{
+	background: white;
+    outline: 1px solid black;
+    color: black;
+}
+
+.sorting-interface-main{
+	margin-bottom: 15px;
+	display: block;
+	text-align: center;
+}
+
+.sorting-interface__elem:hover{
+	background: black;
+}
+
+.lot--office-view{
+	/*transform: scale(0.85);*/
+}
+
+/*lot-page*/
+
+.lot-content{
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.lot-content__header{
+	
+}
+
+.image-container{
+	/*padding:10px;*/
+	/*display: grid;*/
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	align-items: center;
+}
+
+.image-container__elem{
+	margin:10px;
+	outline: 2px solid black;
+}
+
+.image-container__elem--preview-image{
+	grid-column: -1/1;
+}
+
+.text-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.text-info__header{
+	/*display: block;*/
+}
+
+/*remake it later*/
+.text-info span{
+	padding:5px;
+}
+
+.engine-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.bet-info{
+	display: flex;
+	justify-content: space-between;
+	padding:10px;
+	border:1px solid gray;
+	font-size: 20px;
+}
+
+.express-tour-tools-bet-step,
+.expressTourBetForm,
+.express-tour-tools-desired-price,
+.express-tour-tools-max-bet,
+.express-tour-tools-time{
+	margin: 10px;
+}
+
+.guest-navigation{
+	padding-top:30px;
+	display: flex;
+    justify-content: space-around;
+}
+
+.guest-navigation__login-link{
+	display: block;
+    margin-top: 10px;
+    /*background: red;*/
+    background: rgba(82, 82, 82, 1);
+    color:white;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.guest-main{
+	position: relative;
+	margin-top:200px;
+}
+
+/*.guest-main:before{
+	position: absolute;
+	content: '';
+	width:30px;
+	height: 30px;
+	background: red;
+}*/
+
+.guest-main__header{
+	text-align: center;
+}
+
+.guest-main-text-container{
+	width: 500px;
+    margin: 0 auto;
+}
+
+.guest-main-text-container__elem{
+	width: 500px;
+    font-size: 20px;
+    /*text-align: center;*/
+    text-align: left;
+    padding: 15px;
+}
+
+.guest-main-text-container__elem-registered{
+	border: 1px solid black;
+}
+
+.guest-main__register-link{
+	display: block;
+    margin: 0 auto;
+    padding: 15px;
+    background: rgba(82, 82, 82, 1);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.auction-info__general{
+	padding:7px 7px 7px 0px;
+}
+
+.admin_button{
+	text-align: center;
+    display: block;
+    color: black;
+}
+
+.admin-panel__table-elem{
+	padding: 10px;
+    border: 1px solid black;
+}
+
+.lot-elem--car-description{
+	padding:10px;
+}
+
+.express-tour-wrapper{
+	border: 6px solid gray;
+    padding: 15px;
+    color: white;
+    font-size: 21px;
+    background: rgba(150, 10, 10, 0.75);
+}
